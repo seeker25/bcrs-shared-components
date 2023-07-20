@@ -18,13 +18,13 @@ const Template = (args, { argTypes }) => ({
 export const DefaultBaseAddress = Template.bind({})
 DefaultBaseAddress.args = {
   editing: true,
-  schema: {},
+  schema: null,
   address: {}
 }
 export const FilledInBaseAddress = Template.bind({})
 FilledInBaseAddress.args = {
   editing: true,
-  schema: {},
+  schema: null,
   address: {
     streetAddress: '1234 Sesame Street',
     streetAddressAdditional: '4th Floor',

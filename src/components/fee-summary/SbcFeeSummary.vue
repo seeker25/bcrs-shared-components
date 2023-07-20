@@ -10,8 +10,8 @@
 
     <v-slide-y-transition group tag="ul" class="fee-list" v-show="!fetchError">
       <template
-        v-show="(totalFilingFees > 0 && lineItem.fee) || (totalFilingFees == 0)"
         v-for="lineItem in fees"
+        v-show="(totalFilingFees > 0 && lineItem.fee) || (totalFilingFees == 0)"
         >
         <li class="container fee-list__item"
           :key="lineItem.filingType"
@@ -76,7 +76,7 @@ export default class SbcFeeSummary extends Vue {
 
   /* class properties */
   fees: Fee[] = []
-  fetchError: string = ''
+  fetchError = ''
 
   /* lifecycle event */
   mounted (): void {
